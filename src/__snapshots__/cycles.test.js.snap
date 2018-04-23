@@ -2,16 +2,16 @@
 
 exports[`cycles createSubGraph 1`] = `
 Graph {
-  "_data": Object {
-    "1": Array [
-      "2",
-    ],
-    "2": Array [
-      "3",
-    ],
-    "3": Array [
-      "1",
-    ],
+  "_data": Map {
+    1 => Set {
+      2,
+    },
+    2 => Set {
+      3,
+    },
+    3 => Set {
+      1,
+    },
   },
   "vertexParams": Object {},
 }
@@ -19,11 +19,11 @@ Graph {
 
 exports[`cycles createSubGraph 2`] = `
 Graph {
-  "_data": Object {
-    "2": Array [
-      "3",
-    ],
-    "3": Array [],
+  "_data": Map {
+    2 => Set {
+      3,
+    },
+    3 => Set {},
   },
   "vertexParams": Object {},
 }
@@ -31,18 +31,18 @@ Graph {
 
 exports[`cycles leastIndexScc 1`] = `
 Graph {
-  "_data": Object {
-    "1": Array [
-      "2",
-    ],
-    "2": Array [
-      "3",
-    ],
-    "3": Array [
-      "1",
-    ],
+  "_data": Map {
+    1 => Set {
+      2,
+    },
+    2 => Set {
+      3,
+    },
+    3 => Set {
+      1,
+    },
   },
-  "minVertex": "1",
+  "minVertex": 1,
   "vertexParams": Object {},
 }
 `;
@@ -50,42 +50,42 @@ Graph {
 exports[`cycles simpleCycles 1`] = `
 Array [
   Array [
-    "1",
-    "2",
-    "3",
-    "1",
+    1,
+    2,
+    3,
+    1,
   ],
   Array [
-    "1",
-    "5",
-    "2",
-    "3",
-    "1",
+    1,
+    5,
+    2,
+    3,
+    1,
   ],
   Array [
-    "2",
-    "3",
-    "2",
+    2,
+    3,
+    2,
   ],
   Array [
-    "2",
-    "3",
-    "6",
-    "4",
-    "5",
-    "2",
+    2,
+    3,
+    6,
+    4,
+    5,
+    2,
   ],
   Array [
-    "2",
-    "3",
-    "4",
-    "5",
-    "2",
+    2,
+    3,
+    4,
+    5,
+    2,
   ],
   Array [
-    "8",
-    "9",
-    "8",
+    8,
+    9,
+    8,
   ],
 ]
 `;
@@ -93,16 +93,16 @@ Array [
 exports[`cycles simpleCycles 2`] = `
 Array [
   Array [
-    "1",
-    "2",
-    "3",
-    "1",
+    1,
+    2,
+    3,
+    1,
   ],
   Array [
-    "3",
-    "4",
-    "5",
-    "3",
+    3,
+    4,
+    5,
+    3,
   ],
 ]
 `;

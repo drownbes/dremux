@@ -1,11 +1,9 @@
-const { Graph } = require('./graph');
-const { createSubGraph, leastIndexScc, simpleCycles } = require('./cycles');
-const { tarjanScc } = require('./scc');
+const { Graph } = require("./graph");
+const { createSubGraph, leastIndexScc, simpleCycles } = require("./cycles");
+const { tarjanScc } = require("./scc");
 
-describe('cycles', () => {
-
-
-  test('createSubGraph', () => {
+describe("cycles", () => {
+  test("createSubGraph", () => {
     const g = new Graph();
 
     g.addEdge(0, 1);
@@ -15,10 +13,9 @@ describe('cycles', () => {
 
     expect(createSubGraph(1, g)).toMatchSnapshot();
     expect(createSubGraph(2, g)).toMatchSnapshot();
-
   });
 
-  test('leastIndexScc', () => {
+  test("leastIndexScc", () => {
     const g = new Graph();
 
     g.addEdge(0, 1);
@@ -30,10 +27,9 @@ describe('cycles', () => {
 
     let ls = leastIndexScc(sccs, g);
     expect(ls).toMatchSnapshot();
-
   });
 
-  test('simpleCycles', ()=> {
+  test("simpleCycles", () => {
     const graph = new Graph();
 
     graph.addEdge(1, 2);
@@ -52,13 +48,10 @@ describe('cycles', () => {
     graph.addEdge(8, 9);
     graph.addEdge(9, 8);
 
-    expect(
-      simpleCycles(graph)
-    ).toMatchSnapshot();
-
+    expect(simpleCycles(graph)).toMatchSnapshot();
   });
 
-  test('simpleCycles', ()=> {
+  test("simpleCycles", () => {
     const g = new Graph();
 
     g.addEdge(0, 1);
@@ -69,12 +62,6 @@ describe('cycles', () => {
     g.addEdge(4, 5);
     g.addEdge(5, 3);
 
-    expect(
-      simpleCycles(g)
-    ).toMatchSnapshot();
-
+    expect(simpleCycles(g)).toMatchSnapshot();
   });
-
-
-
 });

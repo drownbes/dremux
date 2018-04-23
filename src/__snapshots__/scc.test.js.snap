@@ -3,36 +3,36 @@
 exports[`scc scc tests 1`] = `
 Array [
   Graph {
-    "_data": Object {
-      "2": Array [
-        "3",
-      ],
-      "3": Array [
-        "4",
-      ],
-      "4": Array [
-        "2",
-      ],
+    "_data": Map {
+      4 => Set {
+        2,
+      },
+      2 => Set {
+        3,
+      },
+      3 => Set {
+        4,
+      },
     },
     "vertexParams": Object {},
   },
   Graph {
-    "_data": Object {
-      "6": Array [],
+    "_data": Map {
+      6 => Set {},
     },
     "vertexParams": Object {},
   },
   Graph {
-    "_data": Object {
-      "0": Array [
-        "1",
-      ],
-      "1": Array [
-        "5",
-      ],
-      "5": Array [
-        "0",
-      ],
+    "_data": Map {
+      0 => Set {
+        1,
+      },
+      1 => Set {
+        5,
+      },
+      5 => Set {
+        0,
+      },
     },
     "vertexParams": Object {},
   },
