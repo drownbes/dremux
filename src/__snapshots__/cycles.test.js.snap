@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cycles createSubGraph 1`] = `
+Graph {
+  "_data": Object {
+    "1": Array [
+      "2",
+    ],
+    "2": Array [
+      "3",
+    ],
+    "3": Array [
+      "1",
+    ],
+  },
+  "vertexParams": Object {},
+}
+`;
+
+exports[`cycles createSubGraph 2`] = `
+Graph {
+  "_data": Object {
+    "2": Array [
+      "3",
+    ],
+    "3": Array [],
+  },
+  "vertexParams": Object {},
+}
+`;
+
+exports[`cycles leastIndexScc 1`] = `
+Graph {
+  "_data": Object {
+    "1": Array [
+      "2",
+    ],
+    "2": Array [
+      "3",
+    ],
+    "3": Array [
+      "1",
+    ],
+  },
+  "minVertex": "1",
+  "vertexParams": Object {},
+}
+`;
+
+exports[`cycles simpleCycles 1`] = `
+Array [
+  Array [
+    "1",
+    "2",
+    "3",
+    "1",
+  ],
+  Array [
+    "1",
+    "5",
+    "2",
+    "3",
+    "1",
+  ],
+  Array [
+    "2",
+    "3",
+    "2",
+  ],
+  Array [
+    "2",
+    "3",
+    "6",
+    "4",
+    "5",
+    "2",
+  ],
+  Array [
+    "2",
+    "3",
+    "4",
+    "5",
+    "2",
+  ],
+  Array [
+    "8",
+    "9",
+    "8",
+  ],
+]
+`;
+
+exports[`cycles simpleCycles 2`] = `
+Array [
+  Array [
+    "1",
+    "2",
+    "3",
+    "1",
+  ],
+  Array [
+    "3",
+    "4",
+    "5",
+    "3",
+  ],
+]
+`;

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`scc scc tests 1`] = `
+Array [
+  Graph {
+    "_data": Object {
+      "2": Array [
+        "3",
+      ],
+      "3": Array [
+        "4",
+      ],
+      "4": Array [
+        "2",
+      ],
+    },
+    "vertexParams": Object {},
+  },
+  Graph {
+    "_data": Object {
+      "6": Array [],
+    },
+    "vertexParams": Object {},
+  },
+  Graph {
+    "_data": Object {
+      "0": Array [
+        "1",
+      ],
+      "1": Array [
+        "5",
+      ],
+      "5": Array [
+        "0",
+      ],
+    },
+    "vertexParams": Object {},
+  },
+]
+`;

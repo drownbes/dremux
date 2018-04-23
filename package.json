@@ -1,0 +1,22 @@
+{
+  "name": "dremux",
+  "version": "0.0.1",
+  "description": "Dremux - dependency resolvers and multiplexer",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "dependency",
+    "package",
+    "multiplexer"
+  ],
+  "author": "Artem Markov <drownbes@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "flow-bin": "^0.70.0",
+    "flow-remove-types": "^1.2.3",
+    "husky": "0.14.3",
+    "jest": "22.4.3",
+    "precise-commits": "1.0.2",
+    "prettier": "1.12.1"
+  }
+}
