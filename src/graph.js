@@ -60,6 +60,14 @@ class Graph {
     this.vertexParams = {};
   }
 
+  vertexKeysIter() {
+    return this._data.keys();
+  }
+
+  size() {
+    return this._data.size;
+  }
+
   getAllVertexes() {
     return [...this._data.keys()];
   }

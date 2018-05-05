@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`resolve graphResolve 1`] = `
+Array [
+  "resolved 6",
+  "resolved 4",
+  "resolved 5",
+  "resolved 3 with deps: 5",
+  "resolved 1 with deps: 3",
+  "resolved 2 with deps: 3,4",
+  "resolved 0 with deps: 3,6",
+  Array [
+    "resolved 6",
+    "resolved 4",
+    "resolved 5",
+    "resolved 3",
+    "resolved 1",
+    "resolved 2",
+    "resolved 0",
+  ],
+]
+`;

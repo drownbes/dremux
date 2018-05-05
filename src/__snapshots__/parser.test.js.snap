@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse 1`] = `
+Array [
+  Object {
+    "end": 31,
+    "match": "somefile/name/1.js",
+    "start": 5,
+  },
+  Object {
+    "end": 62,
+    "match": "somefile/name/2.js",
+    "start": 36,
+  },
+  Object {
+    "end": 93,
+    "match": "somefile/name/3.js",
+    "start": 67,
+  },
+]
+`;
+
+exports[`parse 2`] = `
+Array [
+  Object {
+    "end": 31,
+    "match": "somefile/name/1.js",
+    "start": 5,
+  },
+  Object {
+    "end": 58,
+    "match": "somefile/name/2.js",
+    "start": 32,
+  },
+  Object {
+    "end": 89,
+    "match": "somefile/name/3.js",
+    "start": 63,
+  },
+]
+`;
+
+exports[`parse 3`] = `
+Array [
+  Object {
+    "end": 31,
+    "match": "somefile/name/1.js",
+    "start": 5,
+  },
+  Object {
+    "end": 57,
+    "match": "somefile/name/2.js",
+    "start": 31,
+  },
+  Object {
+    "end": 88,
+    "match": "somefile/name/3.js",
+    "start": 62,
+  },
+]
+`;
+
+exports[`parse 4`] = `Array []`;
+
+exports[`parse 5`] = `Array []`;
+
+exports[`parse 6`] = `Array []`;

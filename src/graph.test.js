@@ -27,6 +27,9 @@ describe("graph", () => {
     expected.set(2, new Set([3]));
     expected.set(3, new Set([1]));
     expect(g._data).toEqual(expected);
+
+    expect(g.size()).toEqual(4);
+    expect([...g.vertexKeysIter()]).toEqual([0,1,2,3]);
   });
 
   test("graph add vertex param", () => {
