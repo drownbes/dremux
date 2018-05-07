@@ -24,11 +24,3 @@ async function dremux(params) {
 module.exports = {
   dremux
 };
-
-
-/* cli:
-
-  dremux
-
-
-*/
