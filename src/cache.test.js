@@ -1,7 +1,10 @@
+jest.mock('fs');
+
 const cache = require('./cache');
-
+const fs = require('fs');
 test('fs cache', () => {
-
-  const t = cache.readFileSync('/Users/artemmarkov/Projects/dremux/src/example/booking/BS713.json');
-  cache.readFileSync('/Users/artemmarkov/Projects/dremux/src/example/booking/BS713.json');
+  fs.mkdirpSync('/example/booking/');
+  fs.writeFileSync('/example/booking/BS713.json', '{}', 'utf-8');
+  cache.readFileSync('/example/booking/BS713.json');
+  cache.readFileSync('/example/booking/BS713.json');
 });
